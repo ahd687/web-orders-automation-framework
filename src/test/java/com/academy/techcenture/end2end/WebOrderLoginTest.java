@@ -14,6 +14,7 @@ public class WebOrderLoginTest extends BaseTest {
 
     @Test
     public void loginPositiveTest() throws InterruptedException {
+        extentTest = reports.startTest("Login Positive Test");
         LoginPage loginPage = new LoginPage(driver);
         ViewAllOrdersPage viewAllOrdersPage = new ViewAllOrdersPage(driver);
 
@@ -23,6 +24,7 @@ public class WebOrderLoginTest extends BaseTest {
     }
     @Test
     public void loginIncorrectPasswordTest() throws InterruptedException {
+        extentTest = reports.startTest("Login Incorrect Password");
         LoginPage loginPage = new LoginPage(driver);
         loginPage.verifyUserIsOnLoginPage();
         loginPage.login(USERNAME, INCORRECT_PASSWORD);
@@ -32,6 +34,7 @@ public class WebOrderLoginTest extends BaseTest {
 
     @Test
     public void loginIncorrectUsernameTest() throws InterruptedException {
+        extentTest = reports.startTest("Login Incorrect User Name");
         LoginPage loginPage = new LoginPage(driver);
         loginPage.verifyUserIsOnLoginPage();
         loginPage.login(INCORRECT_USERNAME, PASSWORD);
@@ -40,6 +43,7 @@ public class WebOrderLoginTest extends BaseTest {
 
     @Test
     public void loginIncorrectUsernameAndIncorrectPasswordTest() throws InterruptedException {
+        extentTest = reports.startTest("Incorrect Login Credentials");
         LoginPage loginPage = new LoginPage(driver);
         loginPage.verifyUserIsOnLoginPage();
         loginPage.login(INCORRECT_USERNAME, INCORRECT_PASSWORD);
@@ -48,6 +52,7 @@ public class WebOrderLoginTest extends BaseTest {
 
     @Test
     public void loginEmptyCredentialsTest() throws InterruptedException {
+        extentTest = reports.startTest("Empty Credential");
         LoginPage loginPage = new LoginPage(driver);
         loginPage.verifyUserIsOnLoginPage();
         loginPage.login(EMPTY_USERNAME,EMPTY_PASSWORD);

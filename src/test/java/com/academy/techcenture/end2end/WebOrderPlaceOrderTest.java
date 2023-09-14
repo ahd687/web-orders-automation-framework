@@ -14,7 +14,7 @@ import static com.academy.techcenture.constants.Constants.*;
 public class WebOrderPlaceOrderTest extends BaseTest {
 @Test
 public void placeWebOrderTest() throws InterruptedException {
-
+    extentTest = reports.startTest("Place Web Order");
     LoginPage loginPage = new LoginPage(driver);
     loginPage.login(USERNAME, PASSWORD);
     ViewAllOrdersPage viewAllOrdersPage = new ViewAllOrdersPage(driver);
