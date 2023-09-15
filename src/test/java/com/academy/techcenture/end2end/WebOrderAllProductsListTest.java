@@ -12,6 +12,7 @@ public class WebOrderAllProductsListTest  extends BaseTest {
 
     @Test
     public void checkTableOfAllProductHeader(){
+        extentTest = reports.startTest("Check Table Of All Product Header");
         LoginPage loginPage = new LoginPage(driver);
         ViewAllProductsPage viewAllProductsPage = new ViewAllProductsPage(driver);
         loginPage.login(USERNAME, PASSWORD);
