@@ -11,7 +11,7 @@ public class Constants {
     public static final String MY_MONEY_PRODUCT = "MyMoney";
     public static final String FAMILY_ALBUM_PRODUCT = "FamilyAlbum";
     public static final String SCREEN_SAVER_PRODUCT = "ScreenSaver";
-    public static final int QUANTITY = 10;
+    public static final int QUANTITY = 15;
 
 
     public static final String CUSTOMER_NAME = "Kevin Lee";
